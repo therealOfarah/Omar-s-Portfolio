@@ -1,0 +1,49 @@
+img{
+  border-radius: 50%;
+  width:45%;
+}
+li{
+  display: inline-block;
+  list-style-type: none;
+  font-size: 25px;
+  justify-content: left;
+}
+a{
+  text-decoration: none;
+}
+/* aside{
+  width: 30%;
+  padding-right: 1em;
+  float: right;
+  padding-top: 10%;
+} */
+/* .mini-bio{
+  
+} */
+header{
+  background: #fff;
+  position: sticky;
+  top: 0;
+  
+}
+body{
+  background-color: lightgrey;
+}
+footer{
+  /* display: flex;
+  justify-content: center; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+footer p{
+  font-size: 25px;
+}
+footer a{
+  padding: 15px;
+}
