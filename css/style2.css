@@ -28,3 +28,8 @@ nav ul li a{
   color: black;
   font-weight: bold;
 }
+img{
+  display: flex;
+  width: 50%;
+  
+}
