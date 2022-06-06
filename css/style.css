@@ -1,10 +1,11 @@
-img{
+img {
   display: inline-block;
   width: 25%;
   border-radius: 50%;
   margin-left: 20%;
 }
-aside{
+
+section {
   width: 40%;
   padding-left: .5rem;
   margin-left: .5rem;
@@ -12,45 +13,64 @@ aside{
   margin-right: 5em;
   float: right;
 }
-body{
+
+body {
   background-color: lightgrey;
 }
-aside #mini-bio{
-text-align: center;
-font-size: 40px
+
+section #mini-bio {
+  text-align: center;
+  font-size: 40px
 }
-aside #career{
+
+section #career {
   font-size: 20px;
   color: gray;
   margin-top: -20px;
 }
-aside #general-bio{
+
+section #general-bio {
   font-size: 17px;
   color: gray;
 }
-header{
+
+header {
   background-color: white;
   display: flex;
   margin: -10px -10px 10%;
-  /* margin-bottom: 10%;
-  margin-top: -10px;
-  margin-right: -10px;
-  margin-left: -10px; */
 }
-header a{
+
+header a {
   text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
   display: inline-block;
   margin: 10px;
   font-size: 20px;
-  
+
 }
-header h3{
+
+header h3 {
   margin-left: 10px;
   font-size: 30px;
 }
-header #nav{
-  margin-left:60vw;
+
+header #nav {
+  margin-left: 60vw;
+}
+@media only screen and (max-width :768px){
+  header #nav{
+    margin-left:30vw ;
+  }
+  img{
+    width: 30vh;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
