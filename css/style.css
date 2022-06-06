@@ -1,49 +1,56 @@
 img{
-  border-radius: 50%;
-  width:45%;
-}
-li{
   display: inline-block;
-  list-style-type: none;
-  font-size: 25px;
-  justify-content: left;
+  width: 25%;
+  border-radius: 50%;
+  margin-left: 20%;
 }
-a{
-  text-decoration: none;
-}
-/* aside{
-  width: 30%;
-  padding-right: 1em;
+aside{
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  margin-top: 8em;
+  margin-right: 5em;
   float: right;
-  padding-top: 10%;
-} */
-/* .mini-bio{
-  
-} */
-header{
-  background: #fff;
-  position: sticky;
-  top: 0;
-  
 }
 body{
   background-color: lightgrey;
 }
-footer{
-  /* display: flex;
-  justify-content: center; */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: grey;
-  color: black;
-  text-align: center;
-  margin-top: 50px;
+aside #mini-bio{
+text-align: center;
+font-size: 40px
 }
-footer p{
-  font-size: 25px;
+aside #career{
+  font-size: 20px;
+  color: gray;
+  margin-top: -20px;
 }
-footer a{
-  padding: 15px;
+aside #general-bio{
+  font-size: 17px;
+  color: gray;
+}
+header{
+  background-color: white;
+  display: flex;
+  margin: -10px -10px 10%;
+  /* margin-bottom: 10%;
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-left: -10px; */
+}
+header a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  
+}
+header h3{
+  margin-left: 10px;
+  font-size: 30px;
+}
+header #nav{
+  margin-left:60vw;
 }
