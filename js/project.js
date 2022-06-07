@@ -3,8 +3,11 @@
 
 
 /*-------------------------------- Variables --------------------------------*/
-import { projects } from "./data";
-console.log(projects)
+import { projects } from "./data.js";
+import { workExperince } from "./data.js";
+import { portfolio } from "./data.js";
+
+const cardContainer = document.getElementById("card-container")
 /*------------------------ Cached Element References ------------------------*/
 
 
@@ -14,4 +17,25 @@ console.log(projects)
 
 
 /*-------------------------------- Functions --------------------------------*/
+
+
+let projectData = projects.map(project =>
+`
+<div class="card" style="width: 18rem;">
+  <img src="${project.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${project.name}</h5>
+    <p class="card-text">${project.bio}</p>
+    <a href="${project.weblink}" class="btn btn-primary">Play the game</a>
+    <a href="${project.github}" class="btn btn-secondary">Github</a>
+  </div>
+</div> 
+`
+).join("")
+
+cardContainer.innerHTML = projectData
+
+
+
+
 
