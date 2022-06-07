@@ -1,13 +1,13 @@
-const projects = {
+const projects = [
+  {
     name : "Tic-Tac-Toe",
-    bio : "The above project is a game of Tic-Tac-Toe",
-    image : 
+    image :  "./images/Tic-Tac-Toe",
     weblink : "https://therealofarah-ttt.netlify.app",
+    github:"https://github.com/therealOfarah/Tic-Tac-Toe",
+    bio : "An app built using html,css and javascript",
 }
+]
 
-const resume = {
-
-}
 export{
   projects
 }
