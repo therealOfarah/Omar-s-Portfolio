@@ -1,6 +1,7 @@
 
 body{
 background-color: lightgrey;
+min-height: 100vh;
 }
 
 #links{
@@ -14,15 +15,13 @@ header{
   background-color: white;
   margin-bottom: 10vh;
 }
-
+#flex-container{
+position: sticky;
+}
 footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: grey;
   color: black;
   text-align: center;
-  margin-top: 50px;
   font-size: 20px;
 }

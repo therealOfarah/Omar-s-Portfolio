@@ -49,13 +49,16 @@ a{
   color: black;
 }
 @media only screen and (max-width :768px) {
-  img{
+  /* img{
     width: 55vw;
     margin-top: 20vh;
     margin-bottom: -2vh;
-  }
+    display: inline-block;
+  } */
   section{
-    margin-left:100vw
+    display: flex;
+    align-content:s
+
   }
   header{
     margin-bottom: 0vh;
