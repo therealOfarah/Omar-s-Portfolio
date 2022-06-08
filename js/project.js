@@ -8,16 +8,19 @@ import { workExperince } from "./data.js";
 import { portfolio } from "./data.js";
 
 const cardContainer = document.getElementById("card-container")
+const a = document.querySelector("a")
 /*------------------------ Cached Element References ------------------------*/
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+a.addEventListener("mouseover",hover)
 
 /*-------------------------------- Functions --------------------------------*/
-
+function hover(evt){
+evt.target.style.color= "black"
+}
 
 let projectData = projects.map(project =>
 `

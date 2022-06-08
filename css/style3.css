@@ -10,6 +10,10 @@ h3{
   display: inline-block;
   padding: 10px;
 }
+header{
+  background-color: white;
+  margin-bottom: 10vh;
+}
 
 footer{
   position: fixed;
