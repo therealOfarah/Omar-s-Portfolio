@@ -1,10 +1,19 @@
 import { workExperince } from "./data.js";
 import { resumeTitle } from "./data.js";
-console.log(resumeTitle)
-console.log(workExperince)
 
 const resume =document.getElementById("resume")
 const me = document.getElementById("title")
+const header= document.querySelector("header")
+
+header.addEventListener("mouseover",hover)
+header.addEventListener("mouseout",hoverOut)
+/*-------------------------------- Functions --------------------------------*/
+function hover(evt){
+evt.target.style.backgroundColor="lightblue"
+}
+function hoverOut(evt){
+  evt.target.style.backgroundColor="white"
+}
 
 const title = resumeTitle.map( item=>
 `<h1 style="text-align:center">${item.name}</h2>

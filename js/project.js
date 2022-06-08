@@ -7,18 +7,21 @@ import { projects } from "./data.js";
 
 
 const cardContainer = document.getElementById("card-container")
-const a = document.querySelector("a")
+const header = document.querySelector("header")
 /*------------------------ Cached Element References ------------------------*/
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-a.addEventListener("mouseover",hover)
-
+header.addEventListener("mouseover",hover)
+header.addEventListener("mouseout",hoverOut)
 /*-------------------------------- Functions --------------------------------*/
 function hover(evt){
-evt.target.style.color= "black"
+evt.target.style.backgroundColor="lightblue"
+}
+function hoverOut(evt){
+  evt.target.style.backgroundColor="white"
 }
 
 let projectData = projects.map(project =>
