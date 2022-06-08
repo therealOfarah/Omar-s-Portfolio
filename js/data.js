@@ -17,7 +17,7 @@ const workExperince=[
   {
     name:"Walmart",
     position:"Associate",
-    startEnd:"",
+    startEnd:"August 2019 - July 2020",
     whatYouDid1:"Trained new sales associates on company procedures for checkout and inventory managment",
     whatYouDid2:"Recongnized as top associate in my department",
     whatYouDid3:"Mainted a postive attitude and thorough knowledge of product offerings to accurately direct customers to products they were looking for",

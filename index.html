@@ -5,40 +5,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/d111d402f1.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
   <script defer src="/js/app.js"></script>
   <title>Omar's Portfolio</title>
   <link id="favicon" rel="icon" href="./favicon_io/favicon-32x32.png" type="image">
 </head>
 
-<body>
-  <header><h3 id="name">Omar's Portfolio</h3>
-  <div id="links">
-    <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="projects.html">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact-page.html">Contact</a>
-    </li>
-  </ul>
-</header>
-  <img src="/images/Omar.jpg">
-  <section>
-    <div id="mini-bio">
-      <p><strong>Omar Farah </strong> <br></p>
-      <p id="career">Software Engineering</p>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Omar's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-page.html">Contacts</a>
+          </li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <li><a class="dropdown-item" href="index.html">Action</a></li>
+            <li><a class="dropdown-item" href="projects.html">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="contact-page.html">Something else here</a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <p id="general-bio">
-      Hey, welcome to my page. My name is Omar Farah, I’m a Software Engineer from Auburn,ME. My favorite programing languages are CSS and bit of Javascript
-    </p>
-    <button id="button"><a href="contact-page.html">Lets talk</a></button>
-  </section>
+  </nav>
+</header>
+<img src="/images/Omar.jpg">
+<section>
+  <div id="mini-bio">
+    <p><strong>Omar Farah </strong> <br></p>
+    <p id="career">Software Engineering</p>
+  </div>
+  <p id="general-bio">
+    Hey, welcome to my page. My name is Omar Farah, I’m a Software Engineer from Auburn,ME. My favorite programing
+    languages are CSS and bit of Javascript
+  </p>
+  <button id="button"><a href="contact-page.html">Lets talk</a></button>
+</section>
 </body>
 
 </html>

@@ -36,32 +36,19 @@ section #general-bio {
 #links{
   margin-top: -7vh;
 }
-h3{
-  display: inline-block;
-  padding: 10px;
-}
-header{
-  background-color: white;
-  margin-bottom: 10vh;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
 @media only screen and (max-width :768px) {
-  /* img{
+  img{
     width: 55vw;
-    margin-top: 20vh;
+    margin-top: 8vh;
     margin-bottom: -2vh;
-    display: inline-block;
-  } */
+    
+  }
   section{
     display: flex;
-    align-content:s
-
-  }
-  header{
-    margin-bottom: 0vh;
+    align-content:center;
+    justify-content: center;
+    flex-direction: column;
+    
   }
 }
 
