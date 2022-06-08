@@ -20,7 +20,7 @@ const workExperince=[
     startEnd:"August 2019 - July 2020",
     whatYouDid1:"Trained new sales associates on company procedures for checkout and inventory managment",
     whatYouDid2:"Recongnized as top associate in my department",
-    whatYouDid3:"Mainted a postive attitude and thorough knowledge of product offerings to accurately direct customers to products they were looking for",
+    whatYouDid3:"Practiced good customer service",
   },
   {
     name:"OSL",
@@ -35,8 +35,8 @@ const workExperince=[
     position:"Direct Support Professional",
     startEnd:"July 2020 - February 2022",
     whatYouDid1:"Able to keep medicine reccords in a neat and accurate order",
-    whatYouDid2:"Trained new hires when needed",
-    whatYouDid3:"Stepping up as team lead when managers werent around",
+    whatYouDid2:"Supported individuals with disabilities with daily tasks",
+    whatYouDid3:"Advocated for clients needs",
   }
 ]
 export{
