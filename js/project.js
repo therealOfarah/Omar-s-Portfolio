@@ -4,8 +4,7 @@
 
 /*-------------------------------- Variables --------------------------------*/
 import { projects } from "./data.js";
-import { workExperince } from "./data.js";
-import { portfolio } from "./data.js";
+
 
 const cardContainer = document.getElementById("card-container")
 const a = document.querySelector("a")

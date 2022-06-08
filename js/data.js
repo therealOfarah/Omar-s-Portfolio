@@ -7,7 +7,7 @@ const projects = [
     bio : "An app built using html,css and javascript",
 }
 ]
-const portfolio = [
+const resumeTitle = [
   {
     name: "Omar Farah",
     location: "Auburn,ME",
@@ -40,6 +40,6 @@ const workExperince=[
   }
 ]
 export{
-  projects, portfolio, workExperince
+  projects, resumeTitle, workExperince
 }
   
