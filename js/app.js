@@ -8,16 +8,16 @@
 
 /*------------------------ Cached Element References ------------------------*/
 
-const btn = document.querySelector("#button")
+const photo = document.getElementById("image")
+const btn = document.getElementById("button")
 
 
-/*----------------------------- Event Listeners -----------------------------*/
+btn.addEventListener("mouseover", changeButton)
 
-btn.addEventListener("onClick", changePage)
+function changeButton(evt){
+evt.target.style.backgroundColor="grey"
+evt.target.style.color="black"
+}
 
 /*-------------------------------- Functions --------------------------------*/
-function changePage(evt){
-  //targeting the elemenet thats needed to be changed 
-  const a = document.createElement("a")
-  a.href = "contact-page.html"
-}
+

@@ -19,9 +19,9 @@ const jobs = workExperince.map( work =>
 <h5>Position:${work.position}</h5>
 <h5>Time at Company:${work.startEnd}</h5>
 <ul>
-  <li style="list-style-type: none;">${work.whatYouDid1}</li>
-  <li style="list-style-type: none;">${work.whatYouDid2}</li>
-  <li style="list-style-type: none;">${work.whatYouDid3}</li>
+  <li>${work.whatYouDid1}</li>
+  <li>${work.whatYouDid2}</li>
+  <li>${work.whatYouDid3}</li>
 </ul> 
   
   `
