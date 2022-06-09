@@ -1,14 +1,42 @@
-body{
-  background-color: lightgrey;
+body {
+  --body-bg: darkblue;
+  --body-color:white;
+  --btn-text-color: grey;
+  --inverted-btn-text-color: black;
+  --light-dark-btn-content: "Light Mode";
+  background-color: var(--body-bg);
+  min-height: 100vh;
+
 }
+
+#light-dark-button::after {
+  background-color: var(--inverted-dark-btn-bg);
+  content: var(--light-dark-btn-content);
+}
+
+#light-dark-button {
+  background-color: var(--light-dark-btn-bg);
+  color: var(--btn-text-color);
+  content: var(--light-dark-btn-content);
+}
+
+body.dark {
+  --body-bg: lightgrey;
+  --btn-text-color: rgb(10, 10, 10);
+  --inverted-btn-text-color: #2a2a2a;
+  --light-dark-btn-content: "Dark Mode";
+  background-color: var(--body-bg);
+}
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text-color);
+  margin-bottom: 10vh;
+}
+
 #links{
   margin-top: -7vh;
 }
 h3{
   display: inline-block;
   padding: 10px;
-}
-header{
-  background-color: white;
-  margin-bottom: 10vh;
 }

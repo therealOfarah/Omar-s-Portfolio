@@ -1,9 +1,5 @@
 
 
-
-
-/*------------------------ Cached Element References ------------------------*/
-
 const photo = document.getElementById("image")
 const btn = document.getElementById("button")
 const header = document.querySelector("header")
@@ -20,8 +16,7 @@ function toggleLightDark() {
   body.className = body.className === "dark" ? "" : "dark"
 }
 function checkDarkPref() {
-  if (
-    window.matchMedia("(prefers-color-scheme:dark)").mathces &&
+  if (localStorage.getItem("(prefers-color-scheme:dark)") &&
     body.className !== "dark"
   ) {
     toggleLightDark()
@@ -30,7 +25,11 @@ function checkDarkPref() {
 checkDarkPref()
 lightDarkBtn.addEventListener("click", toggleLightDark)
 //
+//local storage
 
+
+
+//
 function hover(evt) {
   evt.target.style.backgroundColor = "lightblue"
 }
