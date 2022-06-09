@@ -5,7 +5,7 @@ import { skills } from "./data.js";
 const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
-const skill= document.getElementById("skill")
+const skill = document.getElementById("skill")
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
 
@@ -29,11 +29,11 @@ function colorBack(evt) {
 function toggleLightDark() {
   body.className = body.className === "dark" ? "" : "dark"
 }
-function checkDarkPref(){
-  if(
-    window.matchMedia("(prefers-color-scheme:dark)").mathces && 
+function checkDarkPref() {
+  if (
+    window.matchMedia("(prefers-color-scheme:dark)").mathces &&
     body.className !== "dark"
-  ){
+  ) {
     toggleLightDark()
   }
 }
@@ -63,8 +63,8 @@ const jobs = workExperince.map(work =>
 
 resume.innerHTML = jobs
 
-const talents = skills.map(skill=>
-`
+const talents = skills.map(skill =>
+  `
 <h5>Skills</h5>
 <ul>
   <li>${skill.skill1}</li>

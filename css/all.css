@@ -1,6 +1,6 @@
-/* body {
+body {
   --body-bg: darkblue;
-  --body-color:white;
+  --body-color: white;
   --btn-text-color: grey;
   --inverted-btn-text-color: black;
   --light-dark-btn-content: "Light Mode";
@@ -26,43 +26,4 @@ body.dark {
   --inverted-btn-text-color: #2a2a2a;
   --light-dark-btn-content: "Dark Mode";
   background-color: var(--body-bg);
-} */
-
-
-h3 {
-  display: inline-block;
-  padding: 10px;
-}
-
-header {
-  background-color: var(--header-bg);
-  color: var(--header-text-color);
-  margin-bottom: 10vh;
-}
-
-#title {
-  margin-top: -5vh;
-  margin-bottom: 5vh;
-}
-
-#flex-container {
-  position: sticky;
-
-}
-
-footer {
-  width: 100%;
-  background-color: grey;
-  color: black;
-  text-align: center;
-  font-size: 20px;
-
-}
-
-@media only screen and (min-width:1024px) {
-  #skill::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
