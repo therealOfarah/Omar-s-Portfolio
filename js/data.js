@@ -39,7 +39,17 @@ const workExperince=[
     whatYouDid3:"Advocated for clients needs",
   }
 ]
+const skills= [
+  {
+    skill1: "HTML",
+    skill2:"CSS",
+    skill3:"Javscript",
+    skill4:"Git",
+    skill5:"Bootstrap",
+  }
+
+]
 export{
-  projects, resumeTitle, workExperince
+  projects, resumeTitle, workExperince, skills
 }
   
