@@ -12,18 +12,18 @@ header.addEventListener("mouseout", hoverOut)
 /*-------------------------------- Functions --------------------------------*/
 
 //light and dark mode
-function toggleLightDark() {
-  body.className = body.className === "dark" ? "" : "dark"
-}
-function checkDarkPref() {
-  if (localStorage.getItem("(prefers-color-scheme:dark)") &&
-    body.className !== "dark"
-  ) {
-    toggleLightDark()
-  }
-}
-checkDarkPref()
-lightDarkBtn.addEventListener("click", toggleLightDark)
+// function toggleLightDark() {
+//   body.className = body.className === "dark" ? "" : "dark"
+// }
+// function checkDarkPref() {
+//   if (localStorage.getItem("(prefers-color-scheme:dark)") &&
+//     body.className !== "dark"
+//   ) {
+//     toggleLightDark()
+//   }
+// }
+// checkDarkPref()
+// lightDarkBtn.addEventListener("click", toggleLightDark)
 //
 //local storage
 

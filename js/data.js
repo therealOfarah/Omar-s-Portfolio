@@ -12,6 +12,28 @@ const resumeTitle = [
     name: "Experience",
   }
 ]
+const education= [
+  {
+    name :"Averose HighSchool",
+    years:"August 2016 - June 2019",
+    location: "Nairobi,KE"
+  },
+  {
+    name: "Edward Little HighSchool",
+    years:"August 2019 - June 2020",
+    location:"Auburn,ME"
+  },
+  {
+    name: "Treehouse",
+    years:"August 2021 - March 2022",
+    location:"Auburn,ME"
+  },
+  {
+    name:"General Assembly",
+    years:"May 2022 - Current",
+    location:"Auburn,ME"
+  }
+]
 const workExperince = [
   {
     name: "Walmart",
@@ -50,5 +72,5 @@ const skills = [
 
 ]
 export {
-  projects, resumeTitle, workExperince, skills
+  projects, resumeTitle, workExperince, skills, education
 }

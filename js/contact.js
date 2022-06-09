@@ -1,11 +1,13 @@
 import { workExperince } from "./data.js";
 import { resumeTitle } from "./data.js";
 import { skills } from "./data.js";
+import { education } from "./data.js";
 
 const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
 const skill = document.getElementById("skill")
+const education = document.getElementById("education")
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
 
