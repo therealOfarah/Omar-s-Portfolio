@@ -6,6 +6,9 @@ const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
 const skill= document.getElementById("skill")
+const lightDarkBtn = document.querySelector("#light-dark-button")
+const body = document.querySelector("body")
+
 
 header.addEventListener("mouseover", hover)
 header.addEventListener("mouseout", hoverOut)
@@ -22,9 +25,21 @@ function changeColor(evt) {
 function colorBack(evt) {
   evt.target.style.color = "black"
 }
-// function lightDark(){
-//   body.className = body.className === "dark" ? "" : "dark"
-// }
+//light and dark mode
+function toggleLightDark() {
+  body.className = body.className === "dark" ? "" : "dark"
+}
+function checkDarkPref(){
+  if(
+    window.matchMedia("(prefers-color-scheme:dark)").mathces && 
+    body.className !== "dark"
+  ){
+    toggleLightDark()
+  }
+}
+checkDarkPref()
+lightDarkBtn.addEventListener("click", toggleLightDark)
+//
 const title = resumeTitle.map(item =>
   `<h1 style="text-align:center">${item.name}</h2>
   `
