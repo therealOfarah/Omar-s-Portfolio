@@ -7,7 +7,7 @@ const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
 const skill = document.getElementById("skill")
-const education = document.getElementById("education")
+const learning= document.getElementById("learning")
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
 
@@ -77,14 +77,25 @@ const talents = skills.map(skill =>
 </ul>
 `
 ).join(" ")
-
 skill.innerHTML = talents
+const schl = education.map(item =>
+  `
+  <h5>${item.name}</h5>
+  <h6>${item.years}</h6>
+  <h6>${item.location}</h6>
+  `
+).join(" ")
+learning.innerHTML = schl
 resume.addEventListener("mouseover", changeColor)
 resume.addEventListener("mouseout", colorBack)
 me.addEventListener("mouseover", changeColor)
 me.addEventListener("mouseout", colorBack)
 skill.addEventListener("mouseover", changeColor)
 skill.addEventListener("mouseout", colorBack)
+
+
+
+
 {/* <h1 style="text-align:center">title</h2>
 <h4 style="text-align:center">Name and location</h2>
 <h5>Company name:</h5>
