@@ -2,27 +2,27 @@ body {
   ---body-bg:#D3D3D3;
   --body-color: white;
   --btn-text-color: grey;
-  --inverted-btn-text-color: black;
+  --dark-light-button: black;
   background-color: #D3D3D3;
   min-height: 100vh;
 
 }
 
-#light-dark-button::after {
+#dark-light-button{
   background-color: var(--inverted-dark-btn-bg);
-  content: var(--light-dark-btn-content);
+  content: var(--light-dark-button-content);
 }
 
 #light-dark-button {
-  background-color: var(--light-dark-btn-bg);
+  background-color: var(--light-dark-button-bg);
   color: var(--btn-text-color);
-  content: var(--light-dark-btn-content);
+  content: var(--light-dark-button-content);
 }
 
 body.dark {
   --body-bg: darkBlue;
   --btn-text-color: rgb(10, 10, 10);
-  --inverted-btn-text-color: #2a2a2a;
+  --dark-light-button-text-color: #2a2a2a;
   background-color: var(--body-bg);
 }
 
@@ -40,7 +40,7 @@ header {
 
 section {
   width: 40%;
-  padding-left: .5rem;
+  /* padding-left: .5rem; */
   margin-left: .5rem;
   margin-top: 8em;
   margin-right: 5em;
@@ -56,7 +56,7 @@ section #mini-bio {
 section #career {
   font-size: 20px;
   color: gray;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 section #general-bio {
@@ -67,20 +67,20 @@ a{
   text-decoration: none;
   color: black;
 }
+#full-bio{
+  display: flex;
+}
 @media only screen and (max-width :768px) {
   img{
     width: 55vw;
-    margin-top: 8vh;
-    margin-bottom: -2vh;
-    
   }
   section{
-    display: flex;
-    align-content:center;
-    justify-content: center;
-    flex-direction: column;
     
   }
+  #full-bio{
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (min-width:768px) {
