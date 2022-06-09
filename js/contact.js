@@ -1,9 +1,11 @@
 import { workExperince } from "./data.js";
 import { resumeTitle } from "./data.js";
+import { skills } from "./data.js";
 
 const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
+const skill= document.getElementById("skill")
 
 header.addEventListener("mouseover", hover)
 header.addEventListener("mouseout", hoverOut)
@@ -14,9 +16,9 @@ function hover(evt) {
 function hoverOut(evt) {
   evt.target.style.backgroundColor = "white"
 }
-function lightDark(){
-  body.className = body.className === "dark" ? "" : "dark"
-}
+// function lightDark(){
+//   body.className = body.className === "dark" ? "" : "dark"
+// }
 const title = resumeTitle.map(item =>
   `<h1 style="text-align:center">${item.name}</h2>
   <h4 style="text-align:center">${item.location}</h2>`
@@ -40,7 +42,23 @@ const jobs = workExperince.map(work =>
 
 resume.innerHTML = jobs
 
-jobs.addEventListener("mouseover", hover)
+const talents = skills.map(skill=>
+`
+<h5>Skills</h5>
+<ul>
+  <li>${skill.skill1}</li>
+  <li>${skill.skill2}</li>
+  <li>${skill.skill3}</li>
+  <li>${skill.skill4}</li>
+  <li>${skill.skill5}</li>
+</ul>
+`
+).join(" ")
+
+skill.innerHTML = talents
+
+
+// jobs.addEventListener("mouseover", hover)
 {/* <h1 style="text-align:center">title</h2>
 <h4 style="text-align:center">Name and location</h2>
 <h5>Company name:</h5>
