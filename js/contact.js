@@ -11,17 +11,23 @@ header.addEventListener("mouseover", hover)
 header.addEventListener("mouseout", hoverOut)
 /*-------------------------------- Functions --------------------------------*/
 function hover(evt) {
-  evt.target.style.backgroundColor = "lightblue"
+  evt.target.style.backgroundColor = "lightBlue"
 }
 function hoverOut(evt) {
   evt.target.style.backgroundColor = "white"
+}
+function changeColor(evt) {
+  evt.target.style.color = "red"
+}
+function colorBack(evt) {
+  evt.target.style.color = "black"
 }
 // function lightDark(){
 //   body.className = body.className === "dark" ? "" : "dark"
 // }
 const title = resumeTitle.map(item =>
   `<h1 style="text-align:center">${item.name}</h2>
-  <h4 style="text-align:center">${item.location}</h2>`
+  `
 )
 me.innerHTML = title
 
@@ -56,9 +62,12 @@ const talents = skills.map(skill=>
 ).join(" ")
 
 skill.innerHTML = talents
-
-
-// jobs.addEventListener("mouseover", hover)
+resume.addEventListener("mouseover", changeColor)
+resume.addEventListener("mouseout", colorBack)
+me.addEventListener("mouseover", changeColor)
+me.addEventListener("mouseout", colorBack)
+skill.addEventListener("mouseover", changeColor)
+skill.addEventListener("mouseout", colorBack)
 {/* <h1 style="text-align:center">title</h2>
 <h4 style="text-align:center">Name and location</h2>
 <h5>Company name:</h5>

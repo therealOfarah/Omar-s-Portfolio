@@ -9,8 +9,7 @@ const projects = [
 ]
 const resumeTitle = [
   {
-    name: "Omar Farah",
-    location: "Auburn,ME",
+    name: "Experience",
   }
 ]
 const workExperince = [
