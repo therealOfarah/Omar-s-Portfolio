@@ -7,8 +7,8 @@ Check out this link for favicons - https://www.favicon-generator.org/
 # photos
 ![](/images/home-page.png)
 
-![](/images/Projects-page.png)
-![](/images/Contact-page.png)
+![](/images/Projects-page1.png)
+![](/images/Contact-page1.png)
 # Ice Box 
 1. Adding dark light mode to all pages
 2. Displaying confeting after selecting deployment for any project
