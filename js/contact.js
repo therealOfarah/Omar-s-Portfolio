@@ -9,39 +9,70 @@ const header = document.querySelector("header")
 const skill = document.getElementById("skill")
 const learning= document.getElementById("learning")
 const lightDarkBtn = document.querySelector("#light-dark-button")
+const darkLightBtn = document.querySelector("#dark-light-button")
 const body = document.querySelector("body")
+lightDarkBtn.addEventListener("mouseover", bigger)
+lightDarkBtn.addEventListener("mouseout", smaller)
+darkLightBtn.addEventListener("mouseover", biggerLight)
+darkLightBtn.addEventListener("mouseout", smallerLight)
 
-
-header.addEventListener("mouseover", hover)
-header.addEventListener("mouseout", hoverOut)
+// header.addEventListener("mouseover", hover)
+// header.addEventListener("mouseout", hoverOut)
 /*-------------------------------- Functions --------------------------------*/
 function hover(evt) {
-  evt.target.style.backgroundColor = "lightBlue"
+  evt.target.style.backgroundColor = "lightblue"
 }
 function hoverOut(evt) {
   evt.target.style.backgroundColor = "white"
 }
-function changeColor(evt) {
-  evt.target.style.color = "red"
+header.addEventListener("mouseover", hover)
+header.addEventListener("mouseout", hoverOut)
+function lightToDark() {
+  // if statement like if local storage is dark then body class name is dark else if local storage is not dark then body class name is and empty string
+  //set localStorage to either dark or light
+  localStorage.setItem("dark","true")
+  body.className = "dark" 
+  console.log(localStorage)
 }
-function colorBack(evt) {
-  evt.target.style.color = "black"
+
+function darkToLight() {
+
+  //set localStorage to either dark or light
+  localStorage.setItem("dark","false")
+  body.className = ""
+  // console.log(localStorage)
 }
-//light and dark mode
-function toggleLightDark() {
-  body.className = body.className === "dark" ? "" : "dark"
-}
-function checkDarkPref() {
-  if (
-    window.matchMedia("(prefers-color-scheme:dark)").mathces &&
+// console.log(localStorage)
+
+
+  function checkDarkPref() {
+    if (window.matchMedia("(prefers-color-scheme:dark)").matches &&
     body.className !== "dark"
   ) {
-    toggleLightDark()
+    lightDark()
   }
 }
-checkDarkPref()
-lightDarkBtn.addEventListener("click", toggleLightDark)
+function bigger(evt){
+  const word = document.querySelector('#light-dark-button');
+  word.textContent = `DARK`;
+}
+function smaller(evt){
+  const word = document.querySelector('#light-dark-button');
+  word.textContent = `Dark`;
+}
+function biggerLight(evt){
+  const word = document.querySelector('#dark-light-button');
+  word.textContent = `LIGHT`;
+}
+function smallerLight(evt){
+  const word = document.querySelector('#dark-light-button');
+  word.textContent = `Light`;
+}
+lightDarkBtn.addEventListener("click", lightToDark)
+darkLightBtn.addEventListener("click", darkToLight)
 //
+//local storage
+
 const title = resumeTitle.map(item =>
   `<h1 style="text-align:center">${item.name}</h2>
   `
@@ -86,12 +117,14 @@ const schl = education.map(item =>
   `
 ).join(" ")
 learning.innerHTML = schl
-resume.addEventListener("mouseover", changeColor)
-resume.addEventListener("mouseout", colorBack)
-me.addEventListener("mouseover", changeColor)
-me.addEventListener("mouseout", colorBack)
-skill.addEventListener("mouseover", changeColor)
-skill.addEventListener("mouseout", colorBack)
+// resume.addEventListener("mouseover", hover)
+// resume.addEventListener("mouseout", hoverOut)
+// me.addEventListener("mouseover", hover)
+// me.addEventListener("mouseout", hoverOut)
+// skill.addEventListener("mouseover", hover)
+// skill.addEventListener("mouseout", hoverOut)
+// learning.addEventListener("mouseover", hover)
+// learning.addEventListener("mouseout", hoverOut)
 
 
 

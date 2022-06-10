@@ -1,32 +1,29 @@
 body {
-  --body-bg: darkblue;
-  --body-color:white;
-  --btn-text-color: grey;
-  --inverted-btn-text-color: black;
-  --light-dark-btn-content: "Light Mode";
-  background-color: var(--body-bg);
+  ---body-bg: black;
+  --body-color: orange;
+  --btn-text-color: black;
+  --dark-light-button: black;
+  background-color: #D3D3D3;
   min-height: 100vh;
 
 }
 
-#light-dark-button::after {
-  background-color: var(--inverted-dark-btn-bg);
-  content: var(--light-dark-btn-content);
-}
+
 
 #light-dark-button {
-  background-color: var(--light-dark-btn-bg);
   color: var(--btn-text-color);
-  content: var(--light-dark-btn-content);
+
 }
 
 body.dark {
-  --body-bg: lightgrey;
-  --btn-text-color: rgb(10, 10, 10);
-  --inverted-btn-text-color: #2a2a2a;
-  --light-dark-btn-content: "Dark Mode";
+  --body-bg: darkgray;
+  --btn-text-color: grey;
+  --dark-light-button-text-color: #2a2a2a;
   background-color: var(--body-bg);
+  color: white;
 }
+
+
 
 
 h3 {
@@ -57,9 +54,9 @@ footer {
   font-size: 20px;
 
 }
-/* #aboutme{
-  margin-left: 10vw;
-} */
+#aboutme{
+  color: #2a2a2a;
+}
 /* #learnings{
 float: left;
 }

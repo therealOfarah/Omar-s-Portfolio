@@ -1,36 +1,36 @@
 body {
-  ---body-bg:#D3D3D3;
-  --body-color: white;
-  --btn-text-color: grey;
+  ---body-bg: black;
+  --body-color: orange;
+  --btn-text-color: black;
   --dark-light-button: black;
   background-color: #D3D3D3;
   min-height: 100vh;
 
 }
 
-#dark-light-button{
-  background-color: var(--inverted-dark-btn-bg);
-  content: var(--light-dark-button-content);
-}
+
 
 #light-dark-button {
-  background-color: var(--light-dark-button-bg);
+  /* background-color: var(--light-dark-button-bg); */
   color: var(--btn-text-color);
-  content: var(--light-dark-button-content);
+
 }
 
 body.dark {
-  --body-bg: darkBlue;
-  --btn-text-color: rgb(10, 10, 10);
+  --body-bg: darkgray;
+  --btn-text-color: grey;
   --dark-light-button-text-color: #2a2a2a;
   background-color: var(--body-bg);
+  color: white;
 }
 
 header {
   background-color: var(--header-bg);
   color: var(--header-text-color);
   margin-bottom: 10vh;
-}img {
+}
+
+img {
   display: inline-block;
   width: 25%;
   border-radius: 50%;
@@ -61,30 +61,27 @@ section #career {
 
 section #general-bio {
   font-size: 17px;
-  color: gray;
+  color: black;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
-#full-bio{
+
+#full-bio {
   display: flex;
 }
+
 @media only screen and (max-width :768px) {
-  img{
+  img {
     width: 55vw;
   }
-  section{
-    
-  }
-  #full-bio{
+
+  #full-bio {
     flex-direction: column;
   }
 
 }
 
-@media only screen and (min-width:768px) {
-  
-}
-
-
+@media only screen and (min-width:768px) {}

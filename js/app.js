@@ -7,6 +7,12 @@ const lightDarkBtn = document.querySelector("#light-dark-button")
 const darkLightBtn = document.querySelector("#dark-light-button")
 const body = document.querySelector("body")
 
+
+lightDarkBtn.addEventListener("mouseover", bigger)
+lightDarkBtn.addEventListener("mouseout", smaller)
+darkLightBtn.addEventListener("mouseover", biggerLight)
+darkLightBtn.addEventListener("mouseout", smallerLight)
+btn.addEventListener("mouseout", changeButtonBack)
 btn.addEventListener("mouseover", changeButton)
 header.addEventListener("mouseover", hover)
 header.addEventListener("mouseout", hoverOut)
@@ -48,6 +54,22 @@ darkLightBtn.addEventListener("click", darkToLight)
 
 
 //
+function bigger(evt){
+  const word = document.querySelector('#light-dark-button');
+  word.textContent = `DARK`;
+}
+function smaller(evt){
+  const word = document.querySelector('#light-dark-button');
+  word.textContent = `Dark`;
+}
+function biggerLight(evt){
+  const word = document.querySelector('#dark-light-button');
+  word.textContent = `LIGHT`;
+}
+function smallerLight(evt){
+  const word = document.querySelector('#dark-light-button');
+  word.textContent = `Light`;
+}
 function hover(evt) {
   evt.target.style.backgroundColor = "lightblue"
 }
@@ -56,6 +78,10 @@ function hoverOut(evt) {
 }
 function changeButton(evt) {
   evt.target.style.backgroundColor = "grey"
+  evt.target.style.color = "black"
+}
+function changeButtonBack(evt) {
+  evt.target.style.backgroundColor = "white"
   evt.target.style.color = "black"
 }
 
