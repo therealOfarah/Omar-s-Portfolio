@@ -1,5 +1,6 @@
 
 
+/*------------------------ Cached Element References ------------------------*/
 const photo = document.getElementById("image")
 const btn = document.getElementById("button")
 const header = document.querySelector("header")
@@ -7,7 +8,7 @@ const lightDarkBtn = document.querySelector("#light-dark-button")
 const darkLightBtn = document.querySelector("#dark-light-button")
 const body = document.querySelector("body")
 
-
+/*----------------------------- Event Listeners -----------------------------*/
 lightDarkBtn.addEventListener("mouseover", bigger)
 lightDarkBtn.addEventListener("mouseout", smaller)
 darkLightBtn.addEventListener("mouseover", biggerLight)
@@ -16,6 +17,8 @@ btn.addEventListener("mouseout", changeButtonBack)
 btn.addEventListener("mouseover", changeButton)
 header.addEventListener("mouseover", hover)
 header.addEventListener("mouseout", hoverOut)
+lightDarkBtn.addEventListener("click", lightToDark)
+darkLightBtn.addEventListener("click", darkToLight)
 /*-------------------------------- Functions --------------------------------*/
 
 //light and dark mode
@@ -46,8 +49,6 @@ function darkToLight() {
   }
 }
 
-lightDarkBtn.addEventListener("click", lightToDark)
-darkLightBtn.addEventListener("click", darkToLight)
 //
 //local storage
 

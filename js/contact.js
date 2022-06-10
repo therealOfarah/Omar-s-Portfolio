@@ -3,6 +3,7 @@ import { resumeTitle } from "./data.js";
 import { skills } from "./data.js";
 import { education } from "./data.js";
 
+/*------------------------ Cached Element References ------------------------*/
 const resume = document.getElementById("resume")
 const me = document.getElementById("title")
 const header = document.querySelector("header")
@@ -11,13 +12,18 @@ const learning= document.getElementById("learning")
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const darkLightBtn = document.querySelector("#dark-light-button")
 const body = document.querySelector("body")
+
+/*----------------------------- Event Listeners -----------------------------*/
 lightDarkBtn.addEventListener("mouseover", bigger)
 lightDarkBtn.addEventListener("mouseout", smaller)
 darkLightBtn.addEventListener("mouseover", biggerLight)
 darkLightBtn.addEventListener("mouseout", smallerLight)
+lightDarkBtn.addEventListener("click", lightToDark)
+darkLightBtn.addEventListener("click", darkToLight)
+header.addEventListener("mouseover", hover)
+header.addEventListener("mouseout", hoverOut)
 
-// header.addEventListener("mouseover", hover)
-// header.addEventListener("mouseout", hoverOut)
+
 /*-------------------------------- Functions --------------------------------*/
 function hover(evt) {
   evt.target.style.backgroundColor = "lightblue"
@@ -25,8 +31,6 @@ function hover(evt) {
 function hoverOut(evt) {
   evt.target.style.backgroundColor = "white"
 }
-header.addEventListener("mouseover", hover)
-header.addEventListener("mouseout", hoverOut)
 function lightToDark() {
   // if statement like if local storage is dark then body class name is dark else if local storage is not dark then body class name is and empty string
   //set localStorage to either dark or light
@@ -68,8 +72,6 @@ function smallerLight(evt){
   const word = document.querySelector('#dark-light-button');
   word.textContent = `Light`;
 }
-lightDarkBtn.addEventListener("click", lightToDark)
-darkLightBtn.addEventListener("click", darkToLight)
 //
 //local storage
 
@@ -125,17 +127,3 @@ learning.innerHTML = schl
 // skill.addEventListener("mouseout", hoverOut)
 // learning.addEventListener("mouseover", hover)
 // learning.addEventListener("mouseout", hoverOut)
-
-
-
-
-{/* <h1 style="text-align:center">title</h2>
-<h4 style="text-align:center">Name and location</h2>
-<h5>Company name:</h5>
-<h5>Position:</h5>
-<h5>Time at Company:</h5>
-<ul>
-  <li style="list-style-type: none;"></li>
-  <li style="list-style-type: none;"></li>
-  <li style="list-style-type: none;"></li>
-</ul> */}
