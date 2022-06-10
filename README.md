@@ -6,8 +6,7 @@ Check out this link for bootstrap - https://getbootstrap.com/
 Check out this link for favicons - https://www.favicon-generator.org/
 # photos
 ![](/images/home-page.png)
-
-![](/images/Projects-page1.png)
+![](/images/Project-page1.png)
 ![](/images/Contact-page1.png)
 # Ice Box 
 1. Adding dark light mode to all pages
