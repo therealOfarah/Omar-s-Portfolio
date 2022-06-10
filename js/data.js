@@ -55,9 +55,9 @@ const workExperince = [
     name: "Support Solutions",
     position: "Direct Support Professional",
     startEnd: "July 2020 - February 2022",
-    whatYouDid1: "Able to keep medicine reccords in a neat and accurate order",
-    whatYouDid2: "Supported individuals with disabilities with daily tasks",
-    whatYouDid3: "Advocated for clients needs",
+    whatYouDid1: "Able to keep medical reccords in a neat and accurate order",
+    whatYouDid2: "Supported individuals with disabilities on their daily tasks",
+    whatYouDid3: "Advocated for clients rights",
   }
 ]
 const skills = [

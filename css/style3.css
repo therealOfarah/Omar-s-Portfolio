@@ -39,6 +39,7 @@ header {
 
 #title {
   margin-top: -5vh;
+  margin-left: -10vw;
   margin-bottom: 5vh;
 }
 
@@ -56,9 +57,9 @@ footer {
 }
 #aboutme{
   color: #2a2a2a;
-  margin-left: 15vw;
+  margin-left:10vw;
 }
-/* #learnings{
+/* #learning{
 float: left;
 }
 #resume{

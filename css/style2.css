@@ -27,11 +27,6 @@ header {
   color: var(--header-text-color);
   margin-bottom: 10vh;
 }
-
-#links{
-  margin-top: -7vh;
-}
-h3{
-  display: inline-block;
-  padding: 10px;
+#card-container{
+  margin-left: 5vw;
 }
