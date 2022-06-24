@@ -77,7 +77,7 @@ cardContainer.innerHTML = projectData
 
 function bigger(evt){
   const word = document.querySelector('#light-dark-button');
-  word.textContent = `DARK`;
+  word.textContent =  `DARK`;
 }
 function smaller(evt){
   const word = document.querySelector('#light-dark-button');
