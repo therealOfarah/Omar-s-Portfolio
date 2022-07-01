@@ -29,4 +29,6 @@ header {
 }
 #card-container{
   margin-left: 5vw;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -20,8 +20,8 @@ darkLightBtn.addEventListener("mouseover", biggerLight)
 darkLightBtn.addEventListener("mouseout", smallerLight)
 lightDarkBtn.addEventListener("click", lightToDark)
 darkLightBtn.addEventListener("click", darkToLight)
-header.addEventListener("mouseover", hover)
-header.addEventListener("mouseout", hoverOut)
+// header.addEventListener("mouseover", hover)
+// header.addEventListener("mouseout", hoverOut)
 
 
 /*-------------------------------- Functions --------------------------------*/

@@ -16,13 +16,13 @@ const body = document.querySelector("body")
 
 lightDarkBtn.addEventListener("mouseover", bigger)
 lightDarkBtn.addEventListener("mouseout", smaller)
-darkLightBtn.addEventListener("mouseover", biggerLight)
-darkLightBtn.addEventListener("mouseout", smallerLight)
+// darkLightBtn.addEventListener("mouseover", biggerLight)
+// darkLightBtn.addEventListener("mouseout", smallerLight)
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-header.addEventListener("mouseover", hover)
-header.addEventListener("mouseout", hoverOut)
+// header.addEventListener("mouseover", hover)
+// header.addEventListener("mouseout", hoverOut)
 /*-------------------------------- Functions --------------------------------*/
 function lightToDark() {
   // if statement like if local storage is dark then body class name is dark else if local storage is not dark then body class name is and empty string
@@ -66,7 +66,7 @@ let projectData = projects.map(project =>
   <div class="card-body">
     <h5 class="card-title">${project.name}</h5>
     <p class="card-text">${project.bio}</p>
-    <a href="${project.weblink}" class="btn btn-primary">Play the game</a>
+    <a href="${project.weblink}" class="btn btn-primary">Deploy</a>
     <a href="${project.github}" class="btn btn-secondary">Github</a>
   </div>
 </div> 

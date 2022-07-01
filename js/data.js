@@ -5,6 +5,13 @@ const projects = [
     weblink: "https://therealofarah-ttt.netlify.app",
     github: "https://github.com/therealOfarah/Tic-Tac-Toe",
     bio: "An app built using html,css and javascript",
+  },
+  {
+    name: "Ani-Review",
+    image: "/images/Screenshot.png",
+    weblink: "https://omars-ani-review1.herokuapp.com/",
+    github: "https://github.com/therealOfarah/Ani-Review",
+    bio: "An app built using the MEN Stack and Heroku",
   }
 ]
 const resumeTitle = [
