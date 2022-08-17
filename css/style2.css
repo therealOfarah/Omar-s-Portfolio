@@ -8,11 +8,9 @@ body {
 
 }
 
-
-#light-dark-button {
-
-  color: var(--btn-text-color);
-
+.card-img-top{
+  width: 286px;
+  height: 280px;
 }
 
 body.dark {

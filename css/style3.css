@@ -8,24 +8,6 @@ body {
 
 }
 
-
-
-#light-dark-button {
-  color: var(--btn-text-color);
-
-}
-
-body.dark {
-  --body-bg: darkgray;
-  --btn-text-color: grey;
-  --dark-light-button-text-color: #2a2a2a;
-  background-color: var(--body-bg);
-  color: white;
-}
-
-
-
-
 h3 {
   display: inline-block;
   padding: 10px;
@@ -59,13 +41,6 @@ footer {
   color: #2a2a2a;
   margin-left:10vw;
 }
-/* #learning{
-float: left;
-}
-#resume{
-  float :right;
-  margin-top: -40vh;
-  margin-right: 20vw; */
 
 @media only screen and (max-width:768px) {
   #resume{
@@ -73,13 +48,3 @@ float: left;
     margin-top:0;
   }
 }
-/* @media only screen and (min-width:1024px) {
-  #learnings{
-    float: left;
-    }
-    #resume,#work{
-      float :right;
-      margin-top: -40vh;
-      margin-right: 20vw;
-    }
-} */
