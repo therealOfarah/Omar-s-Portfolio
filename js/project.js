@@ -7,15 +7,15 @@ import { projects } from "./data.js";
 
 
 const cardContainer = document.getElementById("card-container")
-const header = document.querySelector("header")
-const lightDarkBtn = document.querySelector("#light-dark-button")
-const darkLightBtn = document.querySelector("#dark-light-button")
+// const header = document.querySelector("header")
+// const lightDarkBtn = document.querySelector("#light-dark-button")
+// const darkLightBtn = document.querySelector("#dark-light-button")
 const body = document.querySelector("body")
 
 /*------------------------ Cached Element References ------------------------*/
 
-lightDarkBtn.addEventListener("mouseover", bigger)
-lightDarkBtn.addEventListener("mouseout", smaller)
+// lightDarkBtn.addEventListener("mouseover", bigger)
+// lightDarkBtn.addEventListener("mouseout", smaller)
 // darkLightBtn.addEventListener("mouseover", biggerLight)
 // darkLightBtn.addEventListener("mouseout", smallerLight)
 
@@ -50,8 +50,8 @@ function checkDarkPref() {
   }
 }
 
-lightDarkBtn.addEventListener("click", lightToDark)
-darkLightBtn.addEventListener("click", darkToLight)
+// lightDarkBtn.addEventListener("click", lightToDark)
+// darkLightBtn.addEventListener("click", darkToLight)
 function hover(evt) {
   evt.target.style.backgroundColor = "lightblue"
 }
