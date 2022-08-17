@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "Fitness Bro",
-    image: "/images/Screenshot.png",
+    image: "/images/fitnessbro.png",
     weblink: "https://fitness-bro.netlify.app/",
     github: "https://github.com/therealOfarah/fitness-bro-front-end",
     bio: "An app built using the MERN Stack and Heroku",
