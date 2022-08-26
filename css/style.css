@@ -40,10 +40,8 @@ img {
 
 section {
   width: 40%;
-  /* padding-left: .5rem; */
-  margin-left: .5rem;
   margin-top: 8em;
-  margin-right: 5em;
+  margin-left: 5em;
   float: right;
 }
 
