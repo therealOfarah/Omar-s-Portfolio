@@ -8,20 +8,11 @@ body {
 
 }
 
-
-
-#light-dark-button {
-  /* background-color: var(--light-dark-button-bg); */
-  color: var(--btn-text-color);
-
-}
-
-body.dark {
-  --body-bg: darkgray;
-  --btn-text-color: grey;
-  --dark-light-button-text-color: #2a2a2a;
-  background-color: var(--body-bg);
-  color: white;
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-left: 75vw;
+  align-items: center;
 }
 
 header {
@@ -54,7 +45,6 @@ section #mini-bio {
 section #career {
   font-size: 20px;
   color: gray;
-  /* margin-top: -20px; */
 }
 
 section #general-bio {
@@ -85,5 +75,3 @@ a {
   
 
 }
-
-@media only screen and (min-width:768px) {}
