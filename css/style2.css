@@ -23,7 +23,14 @@ header {
   margin-bottom: 10vh;
 }
 #card-container{
-  margin-left: 5vw;
+  padding: 0 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 275px;
+  margin: 10px;
+  background-color: peachpuff;
 }
