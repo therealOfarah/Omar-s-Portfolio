@@ -4,7 +4,7 @@ const projects = [
     image: "/images/portfolio.png",
     weblink: "https://omarfarahportfolio.netlify.app/index.html",
     github: "https://github.com/therealOfarah/Omar-s-Portfolio",
-    bio: "This app showcases all of my work and links to deployments for each project that I have done. It was built using HTML,CSS and Javascript",
+    bio: "This app showcases all of my work and links to deployments for each project that I have done so far. It was built using HTML,CSS and Javascript",
   },
   {
     name: "Tic-Tac-Toe",
