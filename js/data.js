@@ -34,6 +34,13 @@ const projects = [
     github: "https://github.com/therealOfarah/Shopping-TS",
     bio: "This website is a clone of GNC. I used Typescript and React to build it.",
   },
+  {
+    name: "Breaking Bad Quotes",
+    image: "/images/image.png",
+    weblink: "https://omars-breaking-bad-quotes.netlify.app/",
+    github: "https://github.com/therealOfarah/random-breaking-bad-quotes",
+    bio: "A website that generates random quotes from breaking bad and better call saul. It was built with Typescript and React",
+  },
 ]
 
 export {
