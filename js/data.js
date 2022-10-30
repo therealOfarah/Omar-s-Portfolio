@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Ani-Review",
     image: "/images/Screenshot.png",
-    weblink: "https://omars-ani-review1.herokuapp.com/",
+    weblink: "https://omarsanireview1.fly.dev/",
     github: "https://github.com/therealOfarah/Ani-Review",
     bio: "A web app that allows you to search up anime and helps you find what you are looking for. This app was built using MEN stack(MongoDb, Express ,Node.js), Anime API, and EJS.",
   },
