@@ -41,6 +41,13 @@ const projects = [
     github: "https://github.com/therealOfarah/random-breaking-bad-quotes",
     bio: "A website that generates random quotes from breaking bad and better call saul. It was built with Typescript and React",
   },
+  {
+    name: "Movie +",
+    image: "/images/Movie+.png",
+    weblink: "https://omar-movie-plus.netlify.app/",
+    github: "https://github.com/therealOfarah/Movie-plus",
+    bio: "This app allows users to browse movies and tv shows. It was built with Typescript, React and TMDB Api",
+  },
 ]
 
 export {
