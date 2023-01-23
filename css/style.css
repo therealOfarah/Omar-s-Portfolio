@@ -60,7 +60,31 @@ a {
 #full-bio {
   display: flex;
 }
+.line-1 {
+  position: relative;
+  border-right: 2px dotted rgba(0, 0, 0, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  margin-left: 14vw;
+  margin-top: 20px;
+}
 
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 3.5s steps(48) 1s 1 normal both,
+  blinkTextCursor 500ms steps(48);
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
 @media only screen and (max-width :768px) {
   img {
     display: inline-block;
