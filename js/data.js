@@ -32,21 +32,21 @@ const projects = [
     image: "/images/GNC.png",
     weblink: "https://omars-gnc-clone.netlify.app/",
     github: "https://github.com/therealOfarah/Shopping-TS",
-    bio: "This website is a clone of GNC. I used Typescript and React to build it.",
+    bio: "This website is a replica of GNC, featuring a similar layout and functionality. Utilizing the power of Typescript and React, the website was expertly crafted to provide a seamless user experience.",
   },
   {
     name: "Breaking Bad Quotes",
     image: "/images/image.png",
     weblink: "https://omars-breaking-bad-quotes.netlify.app/",
     github: "https://github.com/therealOfarah/random-breaking-bad-quotes",
-    bio: "A website that generates random quotes from breaking bad and better call saul. It was built with Typescript and React",
+    bio: "This website offers a unique and engaging experience by generating random quotes from the critically acclaimed television shows, Breaking Bad and Better Call Saul. Utilizing Typescript and React, the website was expertly crafted to deliver a seamless and user-friendly interface.",
   },
   {
     name: "Movie +",
     image: "/images/Movie+.png",
     weblink: "https://omar-movie-plus.netlify.app/",
     github: "https://github.com/therealOfarah/Movie-plus",
-    bio: "This app allows users to browse movies and tv shows. It was built with Typescript, React and TMDB Api",
+    bio: "This app provides users with an effortless way to discover and explore a vast selection of movies and television shows. Built with the cutting-edge technologies of Typescript, React, and the TMDB API. The app is designed to deliver a seamless and enjoyable experience for users, whether they're searching for new releases or classic favorites.",
   },
 ]
 
