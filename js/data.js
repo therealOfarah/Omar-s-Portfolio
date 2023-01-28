@@ -23,7 +23,7 @@ const projects = [
   {
     name: "Fitness Bro",
     image: "/images/fitness-bro.png",
-    weblink: "https://fitness-bro.netlify.app/",
+    weblink: "https://myfitnessbros.netlify.app/",
     github: "https://github.com/therealOfarah/fitness-bro-front-end",
     bio: "My group and I built an amazing app that helps you keep track of each workout you have done and also helps you keep track of your daily food intake. We built this app using the MERN stack(MongoDb, Express ,React.js ,Node.js) also a Workout API and a Nutrition API.",
   },
