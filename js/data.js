@@ -29,7 +29,7 @@ const projects = [
   },
   {
     name: "GNC Clone",
-    image: "/images/GNC.png",
+    image: "/images/GNC2.png",
     weblink: "https://omars-gnc-clone.netlify.app/",
     github: "https://github.com/therealOfarah/Shopping-TS",
     bio: "This website is a replica of GNC, featuring a similar layout and functionality. Utilizing the power of Typescript and React, the website was expertly crafted to provide a seamless user experience.",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     name: "Movie +",
-    image: "/images/Movie+.png",
+    image: "/images/Movieplus.png",
     weblink: "https://omar-movie-plus.netlify.app/",
     github: "https://github.com/therealOfarah/Movie-plus",
     bio: "This app provides users with an effortless way to discover and explore a vast selection of movies and television shows. Built with the cutting-edge technologies of Typescript, React, and the TMDB API. The app is designed to deliver a seamless and enjoyable experience for users, whether they're searching for new releases or classic favorites.",
