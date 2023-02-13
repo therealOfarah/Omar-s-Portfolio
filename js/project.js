@@ -12,7 +12,7 @@ const cardContainer = document.getElementById("card-container")
 let projectData = projects.map(project =>
   `
   <div class="card" style="width: 18rem;">
-  <img src="${project.image}" class="card-img-top" alt="...">
+  <img src="${project.image}" class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">${project.name}</h5>
     <p class="card-text">${project.bio}</p>

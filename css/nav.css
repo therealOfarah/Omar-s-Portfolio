@@ -60,7 +60,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	right: -200vw;
+	right: 200vw;
 }
 
 nav ul {
